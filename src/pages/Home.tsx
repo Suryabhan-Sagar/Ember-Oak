@@ -4,6 +4,7 @@ import { ArrowRight, Flame, MapPin, Clock } from 'lucide-react';
 import { dishes, reviews } from '../data';
 import DishCard from '../components/DishCard';
 import ReviewCard from '../components/ReviewCard';
+import philosophyImg from '../assets/images/regenerated_image_1783757828410.jpg';
 
 export default function Home() {
   const signatureDishes = dishes.filter(d => d.isSignature).slice(0, 4);
@@ -176,7 +177,7 @@ export default function Home() {
               <div className="relative">
                 <div className="absolute top-0 -left-10 w-64 h-64 bg-amber-600/10 blur-3xl rounded-full"></div>
                 <img 
-                  src="/images/philosophy-image.jpeg" 
+                  src={philosophyImg} 
                   alt="Chef plating a dish with tweezers in a bustling kitchen" 
                   className="w-full h-auto object-cover rounded-2xl border border-white/5 relative z-10"
                 />
